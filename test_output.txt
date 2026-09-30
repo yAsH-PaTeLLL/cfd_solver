@@ -1,0 +1,16 @@
+================================================================================
+CFD SOLVER - FULL CROSS-CHECK SUITE
+================================================================================
+Gaussian elimination vs numpy.linalg.solve              max error = 1.66533454e-16
+MST-1 Q3 FDM vs analytical solution                     max error = 1.12806344e+01
+Traceback (most recent call last):
+  File "/mnt/data/cfd_solver_final/main.py", line 5, in <module>
+    main()
+    ~~~~^^
+  File "/mnt/data/cfd_solver_final/run_all_tests.py", line 29, in main
+    check_close("MST-1 Q3 FDM vs analytical solution", r["T"], analytical, 0.01)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/cfd_solver_final/run_all_tests.py", line 12, in check_close
+    assert err <= tol, f"{name}: error {err} > {tol}"
+           ^^^^^^^^^^
+AssertionError: MST-1 Q3 FDM vs analytical solution: error 11.280634441706866 > 0.01

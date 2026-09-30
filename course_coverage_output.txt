@@ -1,0 +1,25 @@
+================================================================================================================
+COURSE COVERAGE + NEW SIMILAR QUESTIONS
+================================================================================================================
+PASS   Assignment-1 Q2: steady FDM                             residual=1.14e-13; max discretization error=6.2857 C
+PASS   Assignment-1 Q3: transient FDM explicit                 Fo=0.24038; max series error at 10s=6.2357 C
+PASS   Assignment-1 Q3: transient FDM implicit                 Fo=0.24038; max series error at 10s=6.8823 C
+PASS   Assignment-2 Q1: steady FVM slab                        residual=1.82e-12; max cell-centre error=3.1250 C
+PASS   Assignment-2 Q2: steady FVM fin                         residual=4.66e-10; max cell-centre error=0.2049 C; Qnum=23.1757 W vs Qexact=23.2075 W
+PASS   Assignment-2 Q3: transient FVM explicit                 Fo=0.00400; max series error at 0.4s=0.6212 C
+PASS   Assignment-2 Q3: transient FVM implicit                 Fo=0.00400; max series error at 0.4s=0.6177 C
+PASS   MST-1 Q3: steady FDM                                    residual=1.14e-13; T=[373.      526.49201 668.31983 800.69953 925.69953]
+PASS   MST-1 Q4: fully implicit FDM                            max difference from instructor rounded answer=0.007059 C
+PASS   MST-1 Q1: CFD-code flowchart                            Covered conceptually by project architecture; no numerical solver required.
+PASS   MST-1 Q2: velocity-potential PDE classification         Covered by PDE-classifier utility in the interface; no matrix solve required.
+PASS   MST-2 Q1: steady FVM                                    residual=1.82e-12; phi=[320.35393 362.56622 406.81059 453.64009]
+PASS   MST-2 Q2: explicit transient FVM (dt=8 s, Fo<1/3)       Fo=0.32000; t=32 s: [ 47.7926 128.3036 176.9313 195.8057]
+PASS   MST-2 Q3: central FVM convection-diffusion              cell Pe=1.000; phi=[0.99793 0.98554 0.94835 0.83678 0.50207]
+PASS   MST-2 Q3: upwind FVM convection-diffusion               cell Pe=1.000; phi=[0.98571 0.94286 0.85714 0.68571 0.34286]
+PASS   MST-2 Q4: transient convection-diffusion implicit       As printed, initial value and left Dirichlet value are both zero, so the numerical solution stays identically zero.
+PASS   NEW: steady FDM, different source/grid                  T=[400.     402.1084 404.2929 406.5545 408.8944 411.3137 413.8137]
+PASS   NEW: transient implicit FDM, both fixed boundaries      final=[100.      20.3976  20.0012  20.      20.      20.      20.      20.
+  20.      20.      20.    ]
+PASS   NEW: steady FVM mixed BC                                range=300.2000..303.8000
+
+19 checks total, 0 failures

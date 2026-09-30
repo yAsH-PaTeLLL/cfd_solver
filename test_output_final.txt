@@ -1,0 +1,30 @@
+================================================================================
+CFD SOLVER - FULL CROSS-CHECK SUITE
+================================================================================
+Gaussian elimination vs numpy.linalg.solve              max error = 1.66533454e-16
+MST-1 Q3 FDM vs analytical solution (5-node grid)       max error = 1.12806344e+01
+MST-1 Q3 matrix residual                                max error = 1.13686838e-13
+MST-1 Q4 implicit first step vs rounded instructor answer max error = 7.05882353e-03
+MST-1 Q4 implicit matrix residual                       max error = 3.55271368e-14
+Explicit FTCS stability guard at Fo=1                   PASS
+MST-2 Q1 FVM matrix residual                            max error = 1.81898940e-12
+MST-2 Q1 FVM vs independent analytical solution         max error = 2.06138593e-01
+MST-2 Q1 FVM cell-center solution: [320.353932 362.566221 406.810588 453.640087]
+Assignment-2 Q1 FVM vs exact solution at cell centres   max error = 3.12500000e+00
+Cell Peclet number for MST-2 Q3 = 1.000000
+MST-2 Q3 central FVM matrix residual                    max error = 7.10542736e-15
+MST-2 Q3 upwind FVM matrix residual                     max error = 7.10542736e-15
+Central solution: [0.99793388 0.98553719 0.94834711 0.83677686 0.50206612]
+Upwind  solution: [0.9893617  0.95744681 0.89361702 0.76595745 0.5106383 ]
+Exact-at-cell-centers: [0.9955993  0.97638142 0.92414182 0.78213986 0.3961385 ]
+Central convection-diffusion grid-refinement max errors: ['0.105928', '0.028821', '0.007526']
+MST-2 Q4 transient CD first two states:
+[[0. 0. 0.]
+ [0. 0. 0.]]
+MST-2 Q4 transient CD initial condition                 max error = 0.00000000e+00
+FDM grid-refinement max errors (5,9,17 nodes): ['11.280634', '5.244591', '2.524000']
+FVM diffusion grid-refinement max errors (4,8,16 CVs): ['3.125000', '0.781250', '0.195312']
+Explicit FDM stable test at Fo=0.500000 -> PASS
+Implicit transient FDM refinement max errors: ['3.215446', '0.817067', '0.161105']
+
+ALL CROSS-CHECKS PASSED.

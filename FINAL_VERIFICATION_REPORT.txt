@@ -1,0 +1,41 @@
+CFD CLASSROOM SOLVER - FINAL VERIFICATION REPORT
+================================================
+Release: Final candidate after v1.3.1 + attribution footer
+
+Environment checks performed in the development container:
+- Python syntax compilation: PASS
+- run_all_tests.py: PASS
+- course_coverage_test.py: PASS
+- Course checks: 19 total, 0 failures
+
+Coverage verified:
+- Assignment-1 Q2: steady FDM
+- Assignment-1 Q3: transient FDM (explicit + implicit)
+- Assignment-2 Q1: steady FVM diffusion
+- Assignment-2 Q2: steady FVM fin
+- Assignment-2 Q3: transient FVM diffusion (explicit + implicit)
+- MST-1 Q1: CFD-code structure (conceptual)
+- MST-1 Q2: PDE classification
+- MST-1 Q3: steady FDM
+- MST-1 Q4: transient fully implicit FDM
+- MST-2 Q1: steady FVM diffusion
+- MST-2 Q2: transient explicit FVM
+- MST-2 Q3: steady convection-diffusion (central + upwind)
+- MST-2 Q4: transient convection-diffusion (fully implicit)
+
+Additional checks:
+- Multiple new, non-copied parameter sets passed.
+- Linear-system residuals checked.
+- Grid-refinement checks included.
+- Flux-conservation checks included.
+- Stability guards included for explicit schemes.
+- Regression tests included for fixes identified in v1.3.
+
+Known course-material ambiguities are documented in verification_notes.md,
+including the MST-1 Q3 273 K / 373 K inconsistency and FVM grid convention.
+
+Browser/UI status:
+- app.py syntax compilation: PASS
+- Full Streamlit browser execution must be checked locally with:
+    streamlit run app.py
+- Do not claim the live UI has been browser-tested until that local check is completed.
